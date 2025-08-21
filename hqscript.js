@@ -20,3 +20,19 @@ window.addEventListener('scroll', () => {
 });
 
 
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        // Prevents the default action of the link
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth' // This enables the smooth animation
+            });
+        }
+    });
+});

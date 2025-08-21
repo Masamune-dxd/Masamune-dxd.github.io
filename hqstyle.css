@@ -195,9 +195,94 @@ nav {
   cursor: pointer;
 }
 
+/* ABOUT SECTION */
+
+#about {
+    min-height: 100vh;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(85, 85, 189, 1) 43%, rgba(167, 221, 235, 1) 98%);
+    display: flex;
+    border-top: solid rgb(84, 84, 172);;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start; 
+    width: 100%;
+}
+
+.about-img-container {
+    flex: 1;
+    min-height: 200vh;
+    background-image: url('images/portrait.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right:solid rgb(84, 84, 172);
+}
+
+.about-text-container {
+    flex: 1;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.about-text-container h1,
+.about-text-container h2 {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 24, 131, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-text-container h1 {
+    font-size: 2.0em;
+    margin-top: 15px;
+    margin-bottom: 0.5em;
+}
+
+.about-text-container h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.about-text-container h3 {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 24, 131, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.about-text-container p,
+.about-text-container li {
+    color: whitesmoke;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.about-text-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
 /* GAME SECTION */
 
 #game-section {
+    border-top: solid rgb(84, 84, 172);;
     position: relative;
     margin: 0;
     display: flex;
